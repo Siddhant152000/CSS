@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: purple;
+            height: 300px;
+            width: 300px;
+            margin: 50px auto;
+            /* transition-property: background color ,width ,height ; */
+            transition-property: all;
+            transition-duration: 5s;
+            transition-delay: 1s;
+
+
+
+            
+            /* specified the speed curve of the transition start slowly and end slowly */
+
+            /* ease -by default  */
+            transition-timing-function: ease;
+        
+            /* start slowly */
+            transition-timing-function: ease-in;
+
+
+            /* end slowly */
+            transition-timing-function: ease-out;
+
+
+            /* start slowly and end slowly  */
+            transition-timing-function: ease-in-out;
+
+            transition-timing-function: linear; 
+
+
+            transition: all 1s ease-in;
+
+
+
+        }
+
+        .container:hover {
+            background-color: aqua;
+            height: 600px;
+            width: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- transition-change or exicute the css property smoothly hover specific  duration -->
+    <div class="container"></div>
+</body>
+
+</html>

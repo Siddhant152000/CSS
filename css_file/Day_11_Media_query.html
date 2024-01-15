@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container {
+            background-color: crimson;
+            height: 200px;
+            width: 100%;
+        }
+
+        .sample-box {
+            background-color: green;
+            height: 100px;
+            width: 1200px;
+            margin-top: 40px;
+        }
+
+
+        /* <!-- small device 0px and 767px --> */
+
+        @media screen and (max-width:767px) {
+            .container {
+                background-color: red;
+            }
+        }
+
+        /* table device /medium device >767px and <927px */
+
+        @media Screen and (min-width:767px) {
+            .container {
+                background-color: yellow;
+            }
+        }
+
+        /* Laptop device /mini dekstop  >927px and <1200px */
+
+
+        /* @media screen and (min-width:927px) and(max-width:1200px){
+
+} */
+
+        @media screen and (min-width:927px) {
+            .container {
+                background-color: aqua;
+
+            }
+        }
+
+
+        /* large device >1200px */
+
+        @media screen and (min-width:1200px){
+            .container{
+                background-color: pink;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- media query-help to build responsive  web application according to multiple device 
+    dekstop ,laptop, tab ,mobile   -->
+
+
+
+    <div class="container"></div>
+
+    <div class="sample-box"></div>
+
+
+
+</body>
+
+</html>

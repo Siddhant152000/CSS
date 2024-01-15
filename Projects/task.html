@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bg-img {
+            background-image: url(../timg/bg.jpg);
+            background-repeat: no-repeat;
+            height: 1000px;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .bg-img h1 {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: hsla(5, 10%, 5%, 0.5);
+            padding: 15px;
+            border: dashed 1px white;
+            border-radius: 20px;
+            width: 90%;
+            margin-left: 50px;
+            padding-left: 50px;
+            text-shadow: 4px 5px 1px rgb(85, 85, 149);
+
+        }
+
+        .btn input {
+            background-color: rgb(48, 47, 47);
+            color: white;
+            padding: 10px 25px;
+            margin-top: 40px;
+            position: relative;
+            bottom: 28px;
+            border-radius: 10px;
+        }
+
+        .btn input:hover {
+            background-color: navy;
+            color: yellow;
+            box-shadow: 0px 1px 1px 1px yellow;
+        }
+
+        .btn {
+            margin-left: 50px;
+            background-color: hsla(0, 1%, 70%, 0.5);
+            position: relative;
+            top: 15px;
+            height: 60px;
+            width: 92%;
+            padding: 0px 20px;
+            border: dashed 1px white;
+            border-radius: 25px;
+        }
+
+        .list {
+            background-color: hsla(5, 10%, 5%, 0.5);
+            height: 750px;
+            width: 94.5%;
+            position: relative;
+            left: 50px;
+            border: dashed 1px white;
+            border-radius: 20px;
+        }
+
+        .list .la {
+            height: 220px;
+            border: dashed white;
+            border-radius: 20px;
+            width: 95%;
+            position: relative;
+            top: 20px;
+            left: 30px;
+
+        }
+
+        .la h2 {
+            color: white;
+            position: relative;
+            left: 30px;
+            top: 10px;
+        }
+
+        .img {
+            margin: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+
+        }
+
+        .img .ia {
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .ia:hover {
+            opacity: 0.5;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .img .ib {
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .ib:hover {
+            opacity: 0.5;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .img .ic {
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .ic:hover {
+            opacity: 0.5;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .img .id {
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .id:hover {
+            opacity: 0.5;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .img .ie {
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .ie:hover {
+            opacity: 0.5;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .img .if {
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .if:hover {
+            opacity: 0.5;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .img .ig {
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .ig:hover {
+            opacity: 0.5;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .img .ih {
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .ih:hover {
+            opacity: 0.5;
+            box-shadow: 2px 2px 2px 1px white;
+        }
+
+        .list .la1 {
+            height: 220px;
+            border: dashed white;
+            border-radius: 20px;
+            width: 95%;
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+
+        .la1 h2 {
+            color: white;
+            position: relative;
+            left: 30px;
+            top: 10px;
+        }
+
+        .list .la2 {
+            height: 220px;
+            border: dashed white;
+            border-radius: 20px;
+            width: 95%;
+            position: relative;
+            top: 40px;
+            left: 30px;
+        }
+
+        .la2 h2 {
+            color: white;
+            position: relative;
+            left: 30px;
+            top: 10px;
+        }
+
+        .cr {
+            background-color: hsla(20, 3%, 34%, 0.5);
+            height: 50px;
+            width: 95%;
+            position: relative;
+            top: 20px;
+            left: 50px;
+            border-radius: 20px;
+        }
+
+        .cr p {
+            text-align: center;
+            position: relative;
+            top: 15px;
+            color: white;
+        }
+
+        .btn i{
+            color: white;
+            position: relative;
+            bottom: 27px;
+            right: 20px;
+        }
+
+        .btn i:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-img">
+        <h1>Music World</h1>
+        <div class="btn">
+            <a href=""><input type="button" value="HOME"></a>
+            <a href=""><input type="button" value="ABOUT US"></a>
+            <a href=""><input type="button" value="CATEGORY"></a><i class="fa-solid fa-arrow-down"></i>
+            <a href=""><input type="button" value="PRODUCTION"></a>
+            <a href=""><input type="button" value="GALLERY"></a>
+            <a href=""><input type="button" value="CONTACT US"></a>
+            <a href=""><input type="button" value="LOGIN"></a>
+        </div>
+        <br><br>
+        <div class="list">
+            <div class="la">
+                <h2><i class="fa-solid fa-arrow-right" style="color: white;"></i> Latest Album ...</h2><br>
+                <hr>
+                <div class="img">
+                    <img src="../timg/a.jpg" class="ia" height="150px" width="130px">
+                    <img src="../timg/b.jpg" class="ib" height="150px" width="120px">
+                    <img src="../timg/c.jpg" class="ic" height="150px" width="120px">
+                    <img src="../timg/d.jpg" class="id" height="150px" width="120px">
+                    <img src="../timg/e.jpg" class="ie" height="150px" width="120px">
+                    <img src="../timg/a.jpg" class="if" height="150px" width="120px">
+                    <img src="../timg/b.jpg" class="ig" height="150px" width="120px">
+                    <img src="../timg/c.jpg" class="ih" height="150px" width="120px">
+                </div>
+            </div>
+
+            <div class="la1">
+                <h2> <i class="fa-solid fa-arrow-right" style="color: white;"></i> 10 Songs ...</h2><br>
+                <hr>
+                <div class="img">
+                    <img src="../timg/a.jpg" class="ia" height="150px" width="130px">
+                    <img src="../timg/b.jpg" class="ib" height="150px" width="120px">
+                    <img src="../timg/c.jpg" class="ic" height="150px" width="120px">
+                    <img src="../timg/d.jpg" class="id" height="150px" width="120px">
+                    <img src="../timg/e.jpg" class="ie" height="150px" width="120px">
+                    <img src="../timg/a.jpg" class="if" height="150px" width="120px">
+                    <img src="../timg/b.jpg" class="ig" height="150px" width="120px">
+                    <img src="../timg/c.jpg" class="ih" height="150px" width="120px">
+                </div>
+            </div>
+
+            <div class="la2">
+                <h2><i class="fa-solid fa-arrow-right" style="color: white;"></i>Top 10 Artist ...</h2><br>
+                <hr>
+                <div class="img">
+                    <img src="../timg/a.jpg" class="ia" height="150px" width="130px">
+                    <img src="../timg/b.jpg" class="ib" height="150px" width="120px">
+                    <img src="../timg/c.jpg" class="ic" height="150px" width="120px">
+                    <img src="../timg/d.jpg" class="id" height="150px" width="120px">
+                    <img src="../timg/e.jpg" class="ie" height="150px" width="120px">
+                    <img src="../timg/a.jpg" class="if" height="150px" width="120px">
+                    <img src="../timg/b.jpg" class="ig" height="150px" width="120px">
+                    <img src="../timg/c.jpg" class="ih" height="150px" width="120px">
+                </div>
+            </div>
+        </div>
+
+        <div class="cr">
+            <p>Copyright © 2023 All RIght Reserved By : Music World ®</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

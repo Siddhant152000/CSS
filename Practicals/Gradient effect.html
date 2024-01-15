@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+           margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background: linear-gradient( to right,white, blue, navy);
+            margin-left: 50px;
+            float: left;
+        }
+        .box2{
+           margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background: linear-gradient(to left,red 10%,white 20%,orange);
+            margin-left: 50px;
+            float: left;
+            
+        }
+        .box3{
+           margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background: radial-gradient( aqua,blue,navy,white); 
+            margin-left: 50px;
+            float: left; }
+            
+            
+        .box4{
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            background: radial-gradient( rgb(54, 56, 56) 20%,rgb(234, 6, 6),rgb(1, 38, 98),rgb(61, 61, 59));
+            margin-left: 20px;
+            background: radial-gradient(farthest-side at 30% 60%, rgb(234, 6, 6),rgb(1, 38, 98),rgb(61, 61, 59));
+            background: radial-gradient(farthest-corner at 60% 40%, rgb(234, 6, 6),rgb(1, 38, 98),rgb(61, 61, 59));
+            margin-left: 50px;
+            float: left;
+        }
+        .box5{
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-left: 50px;
+            float: left;
+            /* background-image: conic-gradient(violet ,indigo,blue,green,yellow,red,orange);; */
+            background: conic-gradient(Red 0deg 51deg,yellow 51deg 102deg, orange 102deg 153deg,green 153deg 204deg, 
+            blue 204deg 255deg,Indigo 255deg 306deg, violet 306deg 357deg );
+            /* background-image: conic-gradient(violet ,indigo,blue,green,yellow,red,orange); */
+        }
+    </style>
+</head>
+<body>
+   <div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+</body>
+</html>

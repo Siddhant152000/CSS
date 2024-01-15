@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* ---------------------------------------------------nav1--------------------------------------------------------- */
+        .nav1 {
+            background-color: rgb(238, 237, 237);
+            height: 40px;
+            width: 100%;
+            padding: 10px 0px;
+            display: flex;
+        }
+
+        .nav1 a {
+            text-decoration: none;
+            color: gray;
+            font-size: 13px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .fa-location-dot {
+            font-size: 13px;
+            color: rgb(7, 182, 252);
+            margin-left: 200px;
+
+        }
+
+        .sub1 {
+            position: absolute;
+            top: 30px;
+            left: -200px;
+            color: white;
+            background-color: black;
+            width: 200px;
+            height: 50px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub1 {
+            visibility: visible;
+            z-index: 1;
+
+        }
+
+        .fa-envelope {
+            font-size: 13px;
+            color: rgb(7, 182, 252);
+        }
+
+        .nav1 p {
+            position: relative;
+            right: 150px;
+        }
+
+        .sub2 {
+            position: relative;
+            top: 20px;
+            left: -300px;
+            color: white;
+            background-color: black;
+            width: 170px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub2 {
+            visibility: visible;
+        }
+
+        .fa-facebook-f {
+            position: relative;
+            left: 200px;
+            font-size: 14px;
+        }
+
+        .sub3 {
+            position: relative;
+            top: 20px;
+            left: 150px;
+            color: white;
+            background-color: black;
+            width: 80px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub3 {
+            visibility: visible;
+        }
+
+        .fa-twitter {
+            position: relative;
+            left: 135px;
+            font-size: 14px;
+        }
+
+        .sub4 {
+            position: relative;
+            top: 20px;
+            left: 100px;
+            color: white;
+            background-color: black;
+            width: 70px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub4 {
+            visibility: visible;
+        }
+
+        .fa-google-plus-g {
+            position: relative;
+            left: 80px;
+            font-size: 14px;
+        }
+
+        .sub5 {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background-color: black;
+            width: 95px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub5 {
+            visibility: visible;
+        }
+
+        .fa-linkedin-in {
+            font-size: 14px;
+        }
+
+        .sub6 {
+            position: relative;
+            top: 20px;
+            left: -40px;
+            color: white;
+            background-color: black;
+            width: px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub6 {
+            visibility: visible;
+        }
+
+        .fa-pinterest {
+            position: relative;
+            right: 75px;
+            font-size: 14px;
+        }
+
+        .sub7 {
+            position: relative;
+            top: 20px;
+            left: -100px;
+            color: white;
+            background-color: black;
+            width: px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub7 {
+            visibility: visible;
+        }
+
+        /* ---------------------------------------------------nav2--------------------------------------------------------- */
+        /* .dento-nav {
+           position: sticky;
+           top: 0;
+           z-index: -1;
+       } */
+
+        .nav2 {
+            background-color: white;
+            height: 100px;
+            width: 100%;
+            font-size: 17px;
+
+        }
+
+        img {
+            position: relative;
+            bottom: 85px;
+            left: 200px;
+        }
+
+        .nav2 ul li {
+            display: inline-block;
+        }
+
+        .nav2 ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav2 .sub8 {
+            display: flex;
+            width: 55%;
+            justify-content: space-around;
+            padding: 35px 10px;
+        }
+
+        .nav2 ul .subnav {
+            display: none;
+            position: absolute;
+        }
+
+        .nav2 a:hover {
+            color: rgb(7, 182, 252);
+        }
+
+        .nav2 ul li:hover>.subnav {
+            display: inherit;
+            z-index: 1;
+        }
+
+        .nav2 ul .subnav li {
+            float: none;
+            display: list-item;
+            list-style-type: none;
+            background-color: white;
+        }
+
+        .sub8 {
+            margin-left: 450px;
+        }
+
+        .nav2 .subnav li {
+            padding: 7px 10px;
+        }
+
+        .nav2 ul .subnav1 {
+            display: none;
+            position: absolute;
+        }
+
+        .nav2 ul li:hover>.subnav1 {
+            display: inherit;
+            z-index: 1;
+        }
+
+        .nav2 ul .subnav1 li {
+            float: none;
+            display: list-item;
+            list-style-type: none;
+            background-color: white;
+        }
+
+        .nav2 .subnav1 li {
+            padding: 7px 10px;
+        }
+
+        .nav2 input {
+            height: 40px;
+            width: 130px;
+            position: relative;
+            left: 50px;
+            bottom: 10px;
+            border: none;
+            background-color: rgb(7, 182, 252);
+            color: white;
+            padding: 0px 15px;
+        }
+
+        .nav2 input:hover {
+            transition: all .5s;
+            background-color: white;
+            color: rgb(7, 182, 252);
+            border: 3px solid rgb(7, 182, 252);
+        }
+
+        /* ---------------------------------------------------bg-img1--------------------------------------------------------- */
+
+        .bg-img1 {
+            background-image: url(./img/img15.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 100%;
+        }
+
+        .bg-img1 h1 {
+            font-size: 35px;
+            background-color: hsla(233, 81%, 10%, 0.8);
+            height: 200px;
+            width: 100%;
+            color: white;
+            padding: 80px 700px;
+        }
+
+        /* ---------------------------------------------------bg-img2--------------------------------------------------------- */
+
+        .bg-img2 {
+            background-color: whitesmoke;
+            height: 1700px;
+            width: 100%;
+            display: flex;
+        }
+
+        .bg-img2 .img4 {
+            position: relative;
+            top: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .bg-img2 h1 {
+            position: relative;
+            bottom: 120px;
+            margin-left: 580px;
+        }
+
+        .bg-img2 h1:hover {
+            color: rgb(7, 182, 252);
+        }
+
+        .bg-img2 p {
+            position: relative;
+            bottom: 90px;
+            margin-left: 580px;
+            line-height: 22px;
+            font-size: 17px;
+        }
+
+        .bg-img2 .dt {
+            position: relative;
+            margin-left: 580px;
+            bottom: 70px;
+
+        }
+
+        .bg-img2 .dt a:hover {
+            transition: all .5s;
+            color: rgb(7, 182, 252);
+        }
+
+        .aside input{
+            position: relative;
+            top: 100px;
+            left: 150px;
+            height: 40px;
+            width: 300px;
+            border: 1px solid gainsboro;
+            padding-left: 20px;
+            border-radius: 7px;
+        }
+
+        .content p0{
+           position: relative;
+           top: 180px;
+           font-size: 30px;
+           left: 150px;
+        }
+
+        .content  p1{
+           position: relative;
+           top: 230px;
+           font-size: 20px;
+           left: 155px;
+        }
+
+        .content  p2{
+           position: relative;
+           top: 280px;
+           font-size: 20px;
+           left: 155px;
+        }
+
+        .content p3{
+           position: relative;
+           top: 330px;
+           font-size: 20px;
+           left: 155px;
+        }
+
+        .content p4{
+           position: relative;
+           top: 380px;
+           font-size: 20px;
+           left: 155px;
+        }
+        
+        .content p5{
+           position: relative;
+           top: 430px;
+           font-size: 20px;
+           left: 155px;
+        }
+
+        .content :hover{
+            color:rgb(7, 182, 252) ;
+        }
+
+        .aside .ad{
+            background-image: url(./img/img23.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            top: 500px;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <nav class="nav1">
+                <a href="#"><i class="fa-solid fa-location-dot"></i> 28 Jackson Street, Chicago, 7788569 USA</a>
+                <p class="sub1">28 Jackson Street, Chicago,<br> &nbsp; &nbsp;&nbsp; &nbsp; 7788569 USA</p>
+                <a href="#">
+                    <p><i class="fa-solid fa-envelope"></i> info.dento@gmail.com</p>
+                </a>
+                <p class="sub2">info.dento@gmail.com</p>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <p class="sub3">facebook</p>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <p class="sub4">Twitter</p>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <p class="sub5">google plus</p>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <p class="sub6">linkedin-in</p>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <p class="sub7">pinterest</p>
+            </nav>
+        </div>
+        <div class="dento-nav">
+            <nav class="nav2">
+                <ul class="sub8">
+                    <li><a href="http://127.0.0.1:5500/Project/dento.html">HOME</a></li>
+                    <li><a href="">PAGES <i class="fa-solid fa-angle-down" style="margin: 0px 2px;"></i></a>
+                        <ul class="subnav">
+                            <li><a href="http://127.0.0.1:5500/Project/dento.html">HOME</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/about-dento.html">ABOUT US</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/services-dento.html">SERVICE</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/pricing.html">PRICING</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/blog-dento.html">BLOG</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/blog-dento.html">BLOG DETAILS</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/contact.html">CONTACT</a></li>
+                            <li><a href="">DROPDOWN</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/Project/about-dento.html">ABOUT </a></li>
+                    <li><a href="http://127.0.0.1:5500/Project/services-dento.html">SERVICE</a></li>
+                    <li><a href="http://127.0.0.1:5500/Project/pricing.html">PRICING</a></li>
+                    <li><a href="">BLOG <i class="fa-solid fa-angle-down" style="margin: 0px 2px;"></i></a>
+                        <ul class="subnav1">
+                            <li><a href="http://127.0.0.1:5500/Project/blog-dento.html">BLOG</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/blog-dento.html">BLOG DETAILS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/Project/contact.html">CONTACT</a></li>
+                    <input type="button" value="BOOKING NOW">
+                </ul>
+                <img src="./img/logo.png" alt="">
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-img1">
+            <h1>BLOG</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-img2">
+            <div>
+                <img src="./img/img4.jpg" height="250px" width="350px" class="img4">
+                <a href="">
+                    <h1>How your mouth bacteria <br> can harm your lungs</h1>
+                </a>
+                <p>Donec tempor, lorem et euismod <br>
+                    eleifend, est lectus laoreet ante, sed <br> accusan justo diam...</p>
+                <div class="dt">
+                    <a href=""><i class="fa-regular fa-clock"></i> 28 Sep 2018</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href=""><i class="fa-regular fa-comments"></i> 3 Comments</a>
+                </div>
+
+                <img src="./img/img5.jpg" height="250px" width="350px" class="img4">
+                <a href="">
+                    <h1>What is the best kind of <br> toothpaste to use?</h1>
+                </a>
+                <p>Donec tempor, lorem et euismod <br>
+                    eleifend, est lectus laoreet ante, sed <br> accusan justo diam...</p>
+                <div class="dt">
+                    <a href=""><i class="fa-regular fa-clock"></i> 28 Sep 2018</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href=""><i class="fa-regular fa-comments"></i> 3 Comments</a>
+                </div>
+
+                <img src="./img/img21.jpeg" height="250px" width="350px" class="img4">
+                <a href="">
+                    <h1>Why you should avoid <br>sipping your drinks</h1>
+                </a>
+                <p>Donec tempor, lorem et euismod <br>
+                    eleifend, est lectus laoreet ante, sed <br> accusan justo diam...</p>
+                <div class="dt">
+                    <a href=""><i class="fa-regular fa-clock"></i> 28 Sep 2018</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href=""><i class="fa-regular fa-comments"></i> 3 Comments</a>
+                </div>
+
+                <img src="./img/img22.jpeg" height="250px" width="350px" class="img4">
+                <a href="">
+                    <h1>How long does numbness last <br>after the dentist?</h1>
+                </a>
+                <p>Donec tempor, lorem et euismod <br>
+                    eleifend, est lectus laoreet ante, sed <br> accusan justo diam...</p>
+                <div class="dt">
+                    <a href=""><i class="fa-regular fa-clock"></i> 28 Sep 2018</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href=""><i class="fa-regular fa-comments"></i> 3 Comments</a>
+                </div>
+            </div>
+
+            <div class="aside">
+                <input type="search" value="" placeholder="SEARCH">
+
+                <div class="content">
+                    <a href=""><p0>Categories</p0><br></a>
+                    <a href=""><p1>Dentistry Articles</p1><br></a>
+                    <a href=""><p2>Oral Health</p2><br></a>
+                    <a href=""><p3>Dental Technology</p3><br></a>
+                    <a href=""><p4>Kids Care Dental</p4><br></a>
+                    <a href=""><p5>Healthy Smiles, Inside & Out</p5></a>
+
+                </div>
+
+                <div class="ad"></div>
+
+                
+            </div>
+
+           
+        </div>
+    </section>
+</body>
+
+</html>

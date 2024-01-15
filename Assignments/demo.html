@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .social-icons {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .container:hover .social-icons {
+            opacity: 1;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons i:hover {
+            color: #007bff;
+        } */
+
+    
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .social-icons {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container:hover .social-icons {
+            opacity: 1;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .container:hover .social-icons a:nth-child(1) {
+            opacity: 1;
+            transition-delay: 0.2s; /* Adjust the delay for the first icon */
+        }
+
+        .container:hover .social-icons a:nth-child(2) {
+            opacity: 1;
+            transition-delay: 0.4s; /* Adjust the delay for the second icon */
+        }
+
+        .container:hover .social-icons a:nth-child(3) {
+            opacity: 1;
+            transition-delay: 0.6s; /* Adjust the delay for the third icon */
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+/* ****************************************************** */
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .social-icons {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform to the transition */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container:hover .social-icons {
+            opacity: 1;
+            transform: translate(-50%, -100%); /* Move the icons upward */
+        }
+
+        .social-icons {
+            display: inline-block;
+            margin: 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform to the transition */
+            background-color: orangered;
+            padding-left: 5px;
+        }
+
+        .container:hover .social-icons a:nth-child(1) {
+            opacity: 1;
+            transform: translateY(0); /* Reset the transform for the first icon */
+            transition-delay: 0.2s;
+            color: white;
+        }
+
+        .container:hover .social-icons a:nth-child(2) {
+            opacity: 1;
+            transform: translateY(0); /* Reset the transform for the second icon */
+            transition-delay: 0.4s;
+            color: white;
+
+        }
+
+        .container:hover .social-icons a:nth-child(3) {
+            opacity: 1;
+            transform: translateY(0); /* Reset the transform for the third icon */
+            transition-delay: 0.6s;
+            color: white;
+
+        }
+
+        .container:hover .social-icons a:nth-child(4) {
+            opacity: 1;
+            transform: translateY(-0); /* Reset the transform for the third icon */
+            transition-delay: 0.6s;
+            color: white;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <div class="container">
+        <img src="../Projects/Project_3_FinBuzz/images/bg-img1.png" alt="Your Image">
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram" ></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+    </div> -->
+
+    <!-- <div class="container">
+        <img src="your-image.jpg" alt="Your Image">
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+            <a href="#" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div> -->
+
+
+  
+    <div class="container">
+        <img src="your-image.jpg" alt="Your Image">
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+            <a href="#" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+
+        </div>
+    </div>
+
+</html>
+
+</body>
+
+</html>

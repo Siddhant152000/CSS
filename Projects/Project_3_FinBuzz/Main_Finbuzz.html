@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .nav1 {
+            background-color: orangered;
+            height: 55px;
+            font-size: 18px;
+        }
+
+        .nav1 a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 20px;
+        }
+
+        p1 {
+            color: white;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+
+        p2 {
+            color: white;
+            position: relative;
+            left: 45px;
+            top: 20px;
+        }
+
+        .nav2 {
+            background-color: white;
+            height: 100px;
+            display: flex;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .logo1 {
+            position: relative;
+            top: 28px;
+            left: 15px;
+
+        }
+
+        .ul {
+            display: flex;
+            list-style-type: none;
+            position: relative;
+            top: 40px;
+            left: 450px;
+            font-size: 17px;
+            width: 35%;
+            justify-content: space-around;
+
+
+        }
+
+        .nav2 i {
+            color: rgb(177, 172, 172);
+            font-size: 20px;
+            position: relative;
+            left: 500px;
+            top: 40px;
+        }
+
+        .nav2 input {
+            height: 50px;
+            width: 200px;
+            position: relative;
+            left: 580px;
+            top: 25px;
+            background-color: orangered;
+            border: 1px solid orangered;
+            border-radius: 7px;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        /* <!-------------------------------------------------------bg-img1-----------------------------------------------------> */
+        .bg-img1 {
+            /* background-image: url(./Project_3_FinBuzz/images/tech\ work\ img1.avif); */
+            background-image: url(./images/tech\ work\ img1.avif);
+            height: 750px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .text1 p3 {
+            border: 3px solid white;
+            padding: 10px 30px;
+            color: white;
+            position: relative;
+            top: 250px;
+            left: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .text1 p4 {
+            color: white;
+            position: relative;
+            top: 280px;
+            left: 27px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .text1 p5 {
+            color: white;
+            position: relative;
+            top: 300px;
+            left: 27px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        /* <!-------------------------------------------------------Cards-----------------------------------------------------> */
+        .c1 {
+            background-color: rgb(255, 255, 255);
+            height: 250px;
+            width: 380px;
+            position: absolute;
+            top: 750px;
+            left: 180px;
+            border-radius: 10px;
+        }
+
+        .c2 {
+            background-color: rgb(255, 255, 255);
+            height: 250px;
+            width: 380px;
+            position: absolute;
+            top: 750px;
+            left: 590px;
+            border-radius: 10px;
+        }
+
+        .c3 {
+            background-color: rgb(255, 255, 255);
+            height: 250px;
+            width: 380px;
+            position: absolute;
+            top: 750px;
+            left: 1000px;
+            border-radius: 10px;
+        }
+
+        .shape1 {
+            border: 5px solid white;
+            width: 20%;
+            background-color: red;
+            border-radius: 50%;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            bottom: 50px;
+            left: 40px;
+
+        }
+
+        .shape2 {
+            border: 5px solid white;
+            width: 20%;
+            background-color: rgb(35, 217, 184);
+            border-radius: 50%;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            bottom: 50px;
+            left: 40px;
+        }
+
+        .shape3 {
+            border: 5px solid white;
+            width: 20%;
+            background-color: rgb(247, 187, 8);
+            border-radius: 50%;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            bottom: 50px;
+            left: 40px;
+            right: 15px;
+        }
+
+        p6 {
+            font-size: 24px;
+            font-weight: 550;
+            position: relative;
+            left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p7 {
+            position: relative;
+            top: 10px;
+            left: 50px;
+            line-height: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p8 {
+            position: relative;
+            top: 50px;
+            right: 160px;
+        }
+
+        p9 {
+            font-size: 24px;
+            font-weight: 550;
+            position: relative;
+            left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p10 {
+            position: relative;
+            top: 10px;
+            left: 50px;
+            line-height: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p11 {
+            position: relative;
+            top: 50px;
+            right: 160px;
+        }
+
+        p12 {
+            font-size: 24px;
+            font-weight: 550;
+            position: relative;
+            left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p13 {
+            position: relative;
+            top: 10px;
+            left: 50px;
+            line-height: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p14 {
+            position: relative;
+            top: 50px;
+            right: 160px;
+        }
+
+        /* <!-------------------------------------------------------bg-img2-----------------------------------------------------> */
+        .bg-img2 {
+            background-image: url(./images/T-bg);
+            height: 1000px;
+            width: 100%;
+
+        }
+
+        .shape4 {
+            position: relative;
+            top: 220px;
+            margin-left: 120px;
+
+        }
+
+        .info {
+            background-color: white;
+            height: 750px;
+            width: 850px;
+            margin-left: 450px;
+            position: relative;
+            top: 35px;
+        }
+
+        .about1new {
+            background-image: url(./images/about1new.jpg);
+            height: 500px;
+            background-repeat: no-repeat;
+            position: relative;
+            bottom: 670px;
+            margin-left: 180px;
+        }
+
+        p15 {
+            border: 2px solid orangered;
+            color: orangered;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+            padding: 5px 20px;
+            position: relative;
+            top: 50px;
+            left: 350px;
+        }
+
+        .info h2 {
+            position: relative;
+            top: 80px;
+            margin-left: 350px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .info p {
+            position: relative;
+            top: 100px;
+            margin-left: 350px;
+            font-size: 16.5px;
+            line-height: 25px;
+        }
+
+        .work-img {
+            position: relative;
+            margin-left: 350px;
+            top: 60px;
+            border: 10px solid white;
+            height: 100px;
+            width: 150px;
+            float: left;
+        }
+
+        .vl {
+            border-left: 5px solid rgb(164, 161, 161);
+            height: 120px;
+            margin-left: 550px;
+            position: relative;
+            bottom: 60px;
+            float: left;
+        }
+
+        .points i {
+            color: orangered;
+            margin-right: 10px;
+
+        }
+
+        .points p16 {
+            position: relative;
+            left: 50px;
+            top: 70px;
+            font-size: 20px;
+        }
+
+        .points p17 {
+            position: relative;
+            left: 50px;
+            top: 80px;
+            font-size: 20px;
+        }
+
+        .points p18 {
+            position: relative;
+            left: 50px;
+            top: 90px;
+            font-size: 20px;
+        }
+
+        .text2 p {
+            position: relative;
+            top: 300px;
+        }
+
+        .work-img2 {
+            background-image: url(./images/about2);
+            background-repeat: no-repeat;
+            position: relative;
+            top: 280px;
+            left: 350px;
+            border: 1px solid white;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        p19 {
+            position: relative;
+            top: 220px;
+            right: 120px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p20 {
+            position: relative;
+            top: 230px;
+            right: 120px;
+            font-size: 18px;
+
+        }
+
+        .sign {
+            background-image: url(./images/sign.png);
+            height: 50px;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 170px;
+            margin-left: 650px;
+        }
+
+        .vl1 {
+            border-left: 3px solid rgb(164, 161, 161);
+            height: 60px;
+            margin-left: 640px;
+            position: relative;
+            top: 120px;
+            float: left;
+        }
+
+        .pro {
+            background-color: white;
+            height: 130px;
+            width: 300px;
+            position: absolute;
+            bottom: -145px;
+            left: -20px;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+
+        .pro-img {
+            background-color: rgb(255, 233, 233);
+            width: 60px;
+            position: relative;
+            top: 15px;
+            left: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        p21 {
+            position: relative;
+            left: 130px;
+            bottom: 70px;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        progress {
+            position: relative;
+            bottom: 40px;
+            right: 15px;
+            width: 150px;
+        }
+
+        .prog {
+            position: relative;
+            left: 145px;
+            line-height: 30px;
+
+        }
+
+        /* <!-------------------------------------------------------bg-img3-----------------------------------------------------> */
+        .bg-img3 {
+            background-image: url(./images/bg-img2);
+            height: 1100px;
+            width: 100%;
+
+        }
+
+        .text3 p {
+            border: 2px solid orangered;
+            color: orangered;
+            width: 115px;
+            padding: 5px 15px;
+            font-weight: 550;
+            position: relative;
+            top: 100px;
+            left: 180px;
+            border-radius: 4px;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text4 {
+            display: flex;
+        }
+
+        .text3 h1 {
+            position: relative;
+            top: 120px;
+            left: 180px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+
+        }
+
+        .text3 h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            position: relative;
+            top: 130px;
+            left: 250px;
+        }
+
+        .m-img1 {
+            background-color: whitesmoke;
+            height: 500px;
+            width: 350px;
+            position: relative;
+            top: 200px;
+            left: 127px;
+            padding: 20px;
+
+        }
+
+        .m-img1 h2 {
+
+            position: relative;
+            bottom: 30px;
+            left: 20px;
+        }
+
+        .m-img1 h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            bottom: 15px;
+            left: 20px;
+            line-height: 25px;
+            color: rgb(145, 143, 143);
+            font-weight: normal;
+        }
+
+        .m-img1 h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            color: rgb(183, 183, 183);
+            font-weight: normal;
+        }
+
+        .m-img2 {
+            background-color: whitesmoke;
+            height: 500px;
+            width: 350px;
+            position: relative;
+            top: 200px;
+            left: 50px;
+            padding: 20px;
+
+        }
+
+        .m-img2 h2 {
+
+            position: relative;
+            bottom: 30px;
+            left: 20px;
+        }
+
+        .m-img2 h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            bottom: 15px;
+            left: 20px;
+            line-height: 25px;
+            color: rgb(145, 143, 143);
+            font-weight: normal;
+        }
+
+        .m-img2 h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            color: rgb(183, 183, 183);
+            font-weight: normal;
+        }
+
+        .m-img3 {
+            background-color: whitesmoke;
+            height: 500px;
+            width: 350px;
+            position: relative;
+            top: 200px;
+            right: 25px;
+            padding: 20px;
+
+        }
+
+        .m-img3 h2 {
+
+            position: relative;
+            bottom: 30px;
+            left: 20px;
+        }
+
+        .m-img3 h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            bottom: 15px;
+            left: 20px;
+            line-height: 25px;
+            color: rgb(145, 143, 143);
+            font-weight: normal;
+        }
+
+        .m-img3 h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            color: rgb(183, 183, 183);
+            font-weight: normal;
+        }
+
+        .mr1 {
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+            border: 10px solid white;
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            background-color: bisque;
+            padding-top: 10px;
+            padding-left: 10px;
+
+        }
+
+        .mr2 {
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+            border: 10px solid white;
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            background-color: bisque;
+            padding-top: 10px;
+            padding-left: 10px;
+
+        }
+
+        .mr3 {
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+            border: 10px solid white;
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            background-color: bisque;
+            padding-top: 10px;
+            padding-left: 10px;
+
+        }
+
+        .bg-img3 h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 260px;
+            margin-left: 600px;
+            font-weight: normal;
+            font-size: 17px;
+        }
+
+        .req {
+            background-color: orangered;
+            height: 160px;
+            width: 75%;
+            position: relative;
+            top: 350px;
+            left: 180px;
+        }
+
+        .req h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: relative;
+            top: 50px;
+            left: 70px;
+            line-height: 35px;
+            font-size: 28px;
+        }
+
+        .req button {
+            height: 55px;
+            width: 260px;
+            background-color: white;
+            position: relative;
+            left: 850px;
+            bottom: 15px;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        /* .req button:hover{
+            box-shadow: inset 400px 0 0 0 red;
+        } */
+
+        .req i {
+            color: orangered;
+            position: relative;
+            left: 1075px;
+            bottom: 53px;
+            font-size: larger;
+        }
+
+
+        .effect2:hover {
+
+            transition: all .5s;
+            transform: translateX(10px);
+            
+        }
+
+        /* <!-------------------------------------------------------bg-img4-----------------------------------------------------> */
+        .bg-img4 {
+            background-image: url(./images/bg-img4);
+            background-repeat: no-repeat;
+            height: 950px;
+            width: 100%;
+        }
+
+        .circle-img {
+            background-image: url(./images/circle-img.png);
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            height: 450px;
+            width: 450px;
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+
+        .shape6 {
+            border: 5px solid white;
+            width: 25%;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            top: 250px;
+            left: -20px;
+            padding-top: 20px;
+            padding-left: 20px;
+
+        }
+
+        .circle-img2 {
+
+            background-image: url(./images/circle-img2);
+            background-repeat: no-repeat;
+            height: 300px;
+            position: relative;
+            left: 300px;
+            bottom: 100px;
+            background-image: none;
+
+        }
+
+        .text5 p {
+            border: 2px solid orangered;
+            width: 140px;
+            height: 24px;
+            padding-top: 5px;
+            padding-left: 10px;
+            position: relative;
+            left: 800px;
+            top: 300px;
+            color: orangered;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+
+        .text5 h1 {
+            position: relative;
+            margin-left: 800px;
+            /* left: 800px; */
+            top: 320px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text5 h4 {
+            position: relative;
+            margin-left: 800px;
+            top: 340px;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+
+        /* .shape7 {
+           position: relative;
+           bottom: 150px;
+            margin-left: 0px;
+
+        } */
+        /* <!-------------------------------------------------------icon-1-----------------------------------------------------> */
+        .zoom-in:hover {
+            transition: all 1sec;
+            color: orangered;
+        }
+
+        .icon1 {
+            width: 150px;
+            position: relative;
+            margin-left: 810px;
+            float: left;
+
+        }
+
+        .icon1:hover {
+            transition: all 1s;
+            transform: scale(1.1);
+        }
+
+        .vl2 {
+            border-left: 4px solid;
+            height: 60px;
+            position: relative;
+            bottom: 10px;
+            margin-left: 900px;
+            width: 150px;
+
+        }
+
+        .vl3 {
+            border-left: 4px solid;
+            height: 20px;
+            position: relative;
+            top: 70px;
+            right: 4px;
+            width: 150px;
+        }
+
+        .text6 {
+            position: relative;
+            bottom: 70px;
+            right: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text7 h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            bottom: 60px;
+            margin-left: 930px;
+            line-height: 25px;
+            font-weight: normal;
+        }
+
+        /* <!-------------------------------------------------------icon-2-----------------------------------------------------> */
+
+        .zoom-in1:hover {
+            transition: all 1sec;
+            color: orangered;
+        }
+
+        .icon2 {
+            width: 150px;
+            position: relative;
+            top: 20px;
+            margin-left: 820px;
+        }
+
+        .icon2:hover {
+            transition: all 1s;
+            transform: scale(1.1);
+        }
+
+        .vl4 {
+            border-left: 4px solid;
+            height: 60px;
+            position: relative;
+            bottom: 50px;
+            margin-left: 900px;
+            width: 150px;
+
+        }
+
+        .vl5 {
+            border-left: 4px solid;
+            height: 20px;
+            position: relative;
+            top: 70px;
+            right: 4px;
+            width: 150px;
+        }
+
+
+
+        .text8 {
+            position: relative;
+            bottom: 110px;
+            margin-left: 930px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text9 h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            bottom: 100px;
+            margin-left: 930px;
+            line-height: 25px;
+            font-weight: normal;
+        }
+
+        /* <!-------------------------------------------------------bg-img5-----------------------------------------------------> */
+        .bg-img5 {
+            background-image: url(./images/bg-img5);
+            background-repeat: no-repeat;
+            background-color: whitesmoke;
+            height: 750px;
+            width: 100%;
+        }
+
+        .text10 p {
+            border: 2px solid orangered;
+            height: 25px;
+            width: 200px;
+            color: orangered;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-top: 10px;
+            position: relative;
+            left: 160px;
+            top: 110px;
+            /* background-color: rgb(222, 217, 217); */
+        }
+
+        .text10 h1 {
+            position: relative;
+            top: 130px;
+            left: 160px;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text10 h4 {
+            position: relative;
+            top: 130px;
+            left: 350px;
+            float: left;
+            line-height: 25px;
+            font-weight: normal;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .div1 {
+            position: relative;
+            right: 1000px;
+            top: 250px;
+        }
+
+        .city-img {
+            margin-left: 15px;
+            height: 350px;
+            width: 285px;
+
+        }
+
+        .city-img:hover {
+            filter: grayscale(100%);
+
+        }
+
+        .ofc-img {
+            margin-left: 20px;
+            height: 350px;
+            width: 285px;
+        }
+
+        .city-img:hover {
+            filter: grayscale(100%);
+        }
+
+        .ofc-img1 {
+            margin-left: 20px;
+            height: 350px;
+            width: 285px;
+        }
+
+        .ofc-img1:hover {
+            filter: grayscale(100%);
+        }
+
+        .ofc-img2 {
+            margin-left: 20px;
+            height: 350px;
+            width: 285px;
+        }
+
+        .ofc-img2:hover {
+            filter: grayscale(100%);
+        }
+
+        .ofc-img3 {
+            margin-left: 20px;
+            height: 350px;
+            width: 285px;
+        }
+
+        .ofc-img3:hover {
+            filter: grayscale(100%);
+        }
+
+        .ofc-img4 {
+            margin-left: 20px;
+            height: 350px;
+            width: 285px;
+        }
+
+        .ofc-img4:hover {
+            filter: grayscale(100%);
+        }
+
+        .content1 {
+            background-color: rgb(249, 246, 246);
+            height: 60px;
+            width: 250px;
+            position: relative;
+            bottom: 90px;
+            left: 15px;
+            border: 0px solid white;
+            border-radius: 0px 40px 40px 0px;
+            padding: 10px 10px;
+            line-height: 25px;
+
+        }
+
+        .content1 h3 {
+            font-size: 22px;
+        }
+
+        .content1:hover {
+            transform: translateY(10px);
+            background-color: orange;
+
+        }
+
+        .bg-img6 {
+            background-image: url(./images/bg-img6.png);
+            height: 600px;
+            width: 100%;
+            padding-top: 0.1px;
+        }
+
+        .shape8 {
+            background-image: url(./images/shape8.png);
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 150px;
+            margin-top: 100px;
+            margin-left: 700px;
+        }
+
+        .work-img10 {
+            position: relative;
+            bottom: 450px;
+            margin-left: 330px;
+        }
+
+        .text11 p {
+            color: white;
+            font-weight: bold;
+            border: 1px solid white;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 24px;
+            width: 150px;
+            padding-top: 10px;
+            padding-left: 10px;
+            position: relative;
+            bottom: 100px;
+            margin-left: 850px;
+        }
+
+        .text11 h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            bottom: 80px;
+            margin-left: 850px;
+        }
+
+        .text11 h4 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            bottom: 60px;
+            margin-left: 850px;
+            font-weight: normal;
+            line-height: 25px;
+        }
+
+        p50 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-left: 850px;
+            font-size: 19px;
+        }
+
+        p51 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-left: 850px;
+            line-height: 40px;
+            font-size: 19px;
+        }
+
+        p52 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-left: 850px;
+            font-size: 19px;
+        }
+
+        p53 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-left: 1150px;
+            font-size: 19px;
+            position: relative;
+            bottom: 83px;
+        }
+
+        p54 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-left: 1150px;
+            font-size: 19px;
+            position: relative;
+            bottom: 77px;
+        }
+
+        p55 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-left: 1150px;
+            font-size: 19px;
+            position: relative;
+            bottom: 70px;
+        }
+
+        .text11 i {
+            color: orangered;
+            margin-right: 10px;
+
+        }
+
+        .bar {
+            background-color: orangered;
+            height: 143px;
+            width: 38%;
+            position: relative;
+            bottom: 50px;
+            margin-left: 900px;
+            border-radius: 20px;
+        }
+
+        .blog11 {
+            background-image: url(./images/blog11.jpg);
+            background-repeat: no-repeat;
+            height: 250px;
+            position: relative;
+            left: 1px;
+            border-radius: 20px 0px;
+
+
+        }
+
+        .phn {
+            position: relative;
+            bottom: 220px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 250px;
+        }
+
+        .no {
+            position: relative;
+            bottom: 200px;
+            font-size: 25px;
+            margin-left: 250px;
+            color: white;
+        }
+
+        .play a {
+            color: orangered;
+            font-size: 30px;
+            padding-left: 15px;
+            padding-right: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: white;
+            height: 40px;
+            width: 25px;
+            border-radius: 50%;
+            position: relative;
+            top: 45px;
+            left: 70px;
+            text-decoration: none;
+        }
+
+        /* <!-------------------------------------------------------bg-img7-----------------------------------------------------> */
+        .bg-img7 {
+            background-image: url(./images/bg-img7.png.png);
+            background-repeat: no-repeat;
+            height: 700px;
+            width: 100%;
+        }
+
+        .text12 p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: orangered;
+            font-weight: bold;
+            border: 2px solid orangered;
+            height: 24px;
+            width: 210px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            position: relative;
+            left: 200px;
+            top: 20px;
+        }
+
+        .text12 h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            left: 200px;
+            top: 35px;
+            float: left;
+        }
+
+        .button2 {
+            background-color: orangered;
+            height: 50px;
+            width: 230px;
+            /* float: left; */
+            position: relative;
+            left: 1100px;
+            top: 40px;
+            border-radius: 10px;
+        }
+
+        .text12 h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            padding-left: 20px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            color: black;
+            font-weight: normal;
+            position: relative;
+            bottom: 55px;
+            left: 10px;
+        }
+
+        .button2 i {
+            font-size: 20px;
+            color: black;
+            position: relative;
+            left: 200px;
+            bottom: 86px;
+        }
+
+        .button2:hover {
+            background-color: whitesmoke;
+            transition: all 1s;
+        }
+
+        .team1 {
+            position: relative;
+            top: 50px;
+            margin-left: 120px;
+        }
+
+        .effect4 {
+            position: relative;
+            bottom: 50px;
+            left: 30px;
+            font-size: 35px;
+            color: white;
+            background-color: orangered;
+            height: 40px;
+            width: 40px;
+            padding-left: 5px;
+            padding-top: 1px;
+            visibility: visible;
+        
+
+        }
+
+        .effect4:hover {
+            transition: all .5s;
+            /* transform: translateX(-10px); */
+            visibility: hidden;
+            
+        }
+
+        .effect5 {
+            padding-left: 5px;
+            padding-bottom: 5px;
+            height: 36px;
+            background-color: orangered;
+            margin-left: -35px;
+            visibility: hidden;
+      
+
+
+        }
+
+        .effect4:hover+.effect5 {
+            width: 250px;
+            transition: all .5s;
+            transform: translateX(15px);
+            visibility: visible;
+            background-color: orangered;
+        }
+
+
+        .team2 {
+            position: relative;
+            top: 50px;
+            margin-left: 30px;
+        }
+
+        .team3 {
+            position: relative;
+            top: 50px;
+            margin-left: 30px;
+            border: 1px solid white;
+        }
+
+        .team3:hover {
+            transition: all 1s;
+            box-shadow: 0 0 20px 20px #2f2f2f;
+            transform: scale(.9);
+            height: 450px;
+        }
+
+        .zoomin:hover {
+            transform: scale(1.01);
+            transition: all ease-in 0.8s;
+            overflow: hidden;
+            display: block;
+            height: 470px;
+            width: 425;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-------------------------------------------------------nav1----------------------------------------------------->
+    <div class="nav1">
+        <a href="http://127.0.0.1:5500/Project/location.html" style="position: relative; left: 20px;">
+            <i class="fa-solid fa-location-dot"></i></a>
+        <p1>120 F 2th Yt, Melbone NY 1259</p1>
+        <a href="#"><i class="fa-solid fa-envelope" style="position: relative; left: 40px;"></i></a>
+        <p2>email@example.com</p2>
+        <a href="#" style="position: relative; left: 600px;"><i class="fa-solid fa-phone"></i> &nbsp; Hotline Number:
+            210-9856988</a>
+        <a href="#"><i class="fa-brands fa-facebook-f " style="position: relative; left: 660px;"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter" style="position: relative; left: 670px;"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus-g" style="position: relative; left: 680px;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in" style="position: relative; left: 690px;"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p" style="position: relative; left: 700px;"></i></a>
+    </div>
+    <!-------------------------------------------------------nav2----------------------------------------------------->
+    <div class="nav2">
+        <div class="logo1">
+            <img src="./images/logo-dark.png.svg" alt="">
+        </div>
+        <div class="ul">
+            <li>Home</li>
+            <li>Pages</li>
+            <li>Services</li>
+            <li>Shop</li>
+            <li>Blog</li>
+            <li>Elements</li>
+        </div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping" style="position: relative; left: 550px;"></i>
+        <input type="button" name="" value="GET CONSULTING">
+    </div>
+
+    <!-------------------------------------------------------bg-img1----------------------------------------------------->
+    <div class="bg-img1">
+        <div class="text1">
+            <p3>WE CREAT DIGITAL PRODUCT</p3> <br>
+            <p4>Provide Massive Business Solutions</p4><br>
+            <p5>Business contents insurance is type of business insurance ossessions and <br>equipment.</p5>
+        </div>
+    </div>
+
+
+    <!-------------------------------------------------------Cards----------------------------------------------------->
+    <div class="c1">
+        <div class="shape1"><img src="./images/shape1.png" height="50px" width="50px"></div>
+        <p6>Business Investment</p6><br>
+        <p7>Your logo is the very heart of your identity <br>designers deliver the perfect.</p7>
+        <p8>Read More &nbsp;<i class="fa-sharp fa-regular fa-circle-right fa-beat" style="color: red;"></i></p8>
+
+    </div>
+    <div class="c2">
+        <div class="shape2"><img src="./images/shape2.png" height="50px" width="50px"></div>
+        <p9>Target Market</p9><br>
+        <p10>Your logo is the very heart of your identity <br>designers deliver the perfect.</p10>
+        <p11>Read More &nbsp;<i class="fa-sharp fa-regular fa-circle-right fa-beat" style="color: red;"></i></p11>
+
+    </div>
+    <div class="c3">
+        <div class="shape3"><img src="./images/shape3.png" height="50px" width="50px"></div>
+        <p12>Saving Money</p12><br>
+        <p13>Your logo is the very heart of your identity <br>designers deliver the perfect.</p13>
+        <p14>Read More &nbsp;<i class="fa-sharp fa-regular fa-circle-right fa-beat" style="color: red;"></i></p14>
+    </div>
+    <!-------------------------------------------------------bg-img2----------------------------------------------------->
+    <div class="bg-img2">
+        <div class="shape4">
+            <img src="./images/shape4.png" alt="">
+        </div>
+
+        <div class="info">
+            <p15>ABOUT US</p15>
+            <h2>We Help Our Clients to Achieve Their Business Goal</h2>
+            <p>Finance can only be as strong as our people our team agenh ave run <br>their businesses.Our agency can
+                only
+                be as stro people our team <br>areafolloe people</p>
+
+            <div class="text2">
+                <p>Finance can only be as strong as our people our team agenh ave run <br>their businesses.Our agency
+                    can only
+                    be as stro people our team <br>areafolloe people</p>
+            </div>
+
+            <div class="work-img">
+                <img src="./images/work-img" alt="" height="100px" width="150px">
+            </div>
+
+            <div class="vl"></div>
+            <div class="points">
+                <p16><i class="fa-solid fa-circle-check"></i>Business is the best plan</p16><br>
+                <p17><i class="fa-solid fa-circle-check"></i>How to improve business</p17><br>
+                <p18><i class="fa-solid fa-circle-check"></i>Services we provide</p18>
+            </div>
+            <div class="work-img2">
+            </div>
+            <p19>Mr. Robert Smith</p19><br>
+            <p20>CEO & Founder</p20>
+            <div class="vl1"></div>
+            <div class="sign">
+
+            </div>
+        </div>
+
+        <div class="about1new">
+            <img src="./images/about1new.jpg" alt="">
+
+            <div class="pro">
+                <div class="pro-img">
+                    <img src="./images/shape5.png" height="30px" width="60px">
+                </div>
+                <p21>Follower Growth</p21>
+                <progress max="100" value="80"></progress>
+                <div class="prog">
+                    <progress max="100" value="70"></progress>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-------------------------------------------------------bg-img3----------------------------------------------------->
+    <div class="bg-img3">
+        <div class="text3">
+            <p>WHAT WE DO</p>
+            <div class="text4">
+                <h1>What Services we Provide for Our <br>Customers Business</h1>
+                <h4>Our agency can only be as strong as our people our team follwing agenhave <br>run their businesses
+                    designed.</h4>
+            </div>
+        </div>
+
+        <div class="main1" style="display: flex; justify-content: space-around;">
+            <div class="m-img1">
+                <img src="./images/m-img1.png" height="250px" width="350px">
+                <div class="mr1">
+                    <img src="./images/Market-Research.svg" height="50px">
+                </div>
+                <h2>Business Audit</h2>
+                <h4>Investment Planning Working with <br>thousands of business companies around</h4>
+                <h3>READ MORE</h3>
+
+            </div>
+            <div class="m-img2">
+                <img src="./images/m-img2.png" height="250px" width="350px">
+                <div class="mr2">
+                    <img src="./images/Saving-Money.svg" height="50px">
+                </div>
+                <h2>Saving Money</h2>
+                <h4>Investment Planning Working with <br>thousands of business companies around</h4>
+                <h3>READ MORE</h3>
+            </div>
+            <div class="m-img3">
+                <img src="./images/m-img3.png" height="250px" width="350px">
+                <div class="mr2">
+                    <img src="./images/Corporate-Finance-1.svg" height="50px">
+                </div>
+                <h2>HR Consulting</h2>
+                <h4>Investment Planning Working with <br>thousands of business companies around</h4>
+                <h3>READ MORE</h3>
+            </div>
+        </div>
+        <h5>You Can Also <font color="orangered">See All Business</font> Services</h5>
+        <div class="req">
+            <h2>Request a Schedule For <br>
+                Free Consultation</h2>
+
+
+            <div class="effect1">
+                <button class="slide">REQUEST SCHEDULE</button>
+                <div class="effect2">
+                    &nbsp;<i class="fa-regular fa-circle-right"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-------------------------------------------------------bg-img4----------------------------------------------------->
+    <div div class="bg-img4">
+        <div class="text5">
+            <p>OUR MAIN GOAL</p>
+            <h1>Creating a Business with Authentic <br>Integrity</h1>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipissed do eius mod tempor <br>incididunt ut laboret amet,
+                Lorem
+                ipsum amet, consectetur adipiscing se dolor <br> sit amet</h4>
+        </div>
+        <div class="circle-img">
+            <div class="shape6"><img src="./images/shape6.png" height="100px" width="100px"></div>
+            <div class="circle-img2"></div>
+
+        </div>
+
+
+        <div class="zoom-in">
+            <div class="icon1">
+                <img src="./images/icon1.png" height="60px">
+            </div>
+            <div>
+                <div class="vl2">
+                    <div class="vl3"></div>
+                </div>
+            </div>
+            <div class="text6">
+                <h2>Strategic vision</h2>
+            </div>
+        </div>
+        <div class="text7">
+            <h4>Dorem ipsum dolor sit amet, consectetu mod tempor <br> incididunt.</h4>
+        </div>
+
+
+
+        <div class="zoom-in1">
+            <div class="icon2">
+                <img src="./images/Icon_02.png" height="60px">
+            </div>
+            <div>
+                <div class="vl4">
+                    <div class="vl5"></div>
+                </div>
+            </div>
+            <div class="text8">
+                <h2>Strategic vision</h2>
+            </div>
+        </div>
+        <div class="text9">
+            <h4>Dorem ipsum dolor sit amet, consectetu mod tempor <br> incididunt.</h4>
+        </div>
+    </div>
+    <!-------------------------------------------------------bg-img5----------------------------------------------------->
+    <div class="bg-img5">
+        <div class="text10">
+            <p>RECENT CASE STUDIES</p>
+            <h1>We Are Specialist For Many <br>Consulting Cases</h1>
+            <h4>Our agency can only be as strong as our people our team follwing agenhave <br>run their businesses
+                designed</h4>
+        </div>
+
+        <div style="display: flex;" class="div1">
+            <div class="bg">
+                <div class="city-img">
+                    <img src="./images/city-img.png" height="350px" width="285px">
+                </div>
+                <div class="content1">
+                    <p>Business Strategy</p>
+                    <h3>Our Business Growth</h3>
+                </div>
+            </div>
+            <div class="bg1">
+                <div class="ofc-img1">
+                    <img src="./images/ofc-img.jpg" height="350px" width="285px">
+                </div>
+                <div class="content1">
+                    <p>Business Strategy</p>
+                    <h3>Our Business Growth</h3>
+                </div>
+            </div>
+
+            <div class="bg3">
+                <div class="ofc-img2">
+                    <img src="./images/ofc-img2.png" height="350px" width="285px">
+                </div>
+                <div class="content1">
+                    <p>Business Strategy</p>
+                    <h3>Our Business Growth</h3>
+                </div>
+            </div>
+
+            <div class="bg4">
+                <div class="ofc-img3">
+                    <img src="./images/ofc-img3.png" height="350px" width="285px">
+                </div>
+                <div class="content1">
+                    <p>Business Strategy</p>
+                    <h3>Our Business Growth</h3>
+                </div>
+            </div>
+
+            <div class="bg5">
+                <div class="ofc-img4">
+                    <img src="./images/ofc-img4.png" height="350px" width="285px">
+                </div>
+                <div class="content1">
+                    <p>Business Strategy</p>
+                    <h3>Our Business Growth</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------bg-img6----------------------------------------------------->
+    <div class="bg-img6">
+        <div class="shape8"></div>
+        <div class="text11">
+            <p>WHY CHOOSE US</p>
+            <h1>For Excellent Performance We Focus on <br>Critical.</h1>
+            <h4>Our agency can only be as strong as our peopleagenhave their <br>
+                businesses Duis aute irure dolorreprehDuis auteirur olor in reprehenderit <br>
+                in voluptate.</h4>
+            <p50><i class="fa-solid fa-circle-check"></i>Business is the best plan</p50><br>
+            <p51><i class="fa-solid fa-circle-check"></i>How to improve business</p51><br>
+            <p52><i class="fa-solid fa-circle-check"></i>Services we provide</p52>
+            <p53><i class="fa-solid fa-circle-check"></i>Business is the best plan</p53><br>
+            <p54><i class="fa-solid fa-circle-check"></i>How to improve business</p54><br>
+            <p55><i class="fa-solid fa-circle-check"></i>Services we provide</p55>
+        </div>
+        <div class="work-img10">
+            <img src="./images/work-img2" height="500px" width="450px">
+        </div>
+    </div>
+
+    <div class="bar">
+        <div class="blog11">
+            <div class="play">
+                <a href=""> <i class="fa-solid fa-play"></i></a>
+            </div>
+        </div>
+        <div class="phn">
+            <p>12/7 Support Team</p>
+        </div>
+        <div class="no"><i class="fa-solid fa-phone" style="color: white;"></i>+123-55-05800</div>
+    </div>
+    </div>
+    <!-------------------------------------------------------bg-img7----------------------------------------------------->
+    <div class="bg-img7">
+        <div class="text12">
+            <p>EXPERT PEOPLE MATTER</p>
+            <h1>We Have Energatic Team For <br>Organization</h1>
+            <div class="button2">
+                <h3>SEE ALL MEMBERS</h3>
+                <div class="effect3">
+                    <i class="fa-regular fa-circle-right"></i>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="team" style="display: flex;">
+
+            <div class="team1">
+
+                <img src="./images/team1.png" height="450px" width="400px">
+
+                <div class="effect4">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="container">
+                    <img src="your-image.jpg" alt="Your Image">
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+                        <a href="#" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="team2">
+                <img src="./images/team2.png" height="450px" width="400px">
+                <div class="effect4">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="effect5"
+                    style="display: flex; position: relative; bottom: 91.2px; color: rgb(255, 255, 255); font-size: 35px; left: 55px;">
+                    <i class="fa-brands fa-instagram" style="margin-left: 0px;"></i>
+                    <i class="fa-brands fa-x-twitter" style="margin-left: 20px;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="margin-left: 20px;"></i>
+                    <i class="fa-brands fa-facebook-f" style="margin-left: 20px;"></i>
+                </div>
+
+            </div>
+
+            <div class="team3">
+
+                <img src="./images/team3" alt="" height="450px" width="400px">
+
+                <div class="effect4">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="effect5"
+                    style="display: flex; position: relative; bottom: 91.2px; color: rgb(255, 255, 255); font-size: 35px; left: 55px;">
+                    <i class="fa-brands fa-instagram" style="margin-left: 0px;"></i>
+                    <i class="fa-brands fa-x-twitter" style="margin-left: 20px;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="margin-left: 20px;"></i>
+                    <i class="fa-brands fa-facebook-f" style="margin-left: 20px;"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav{
+            background-color: black;
+            height: 100px;
+            width: 100%;
+        }
+
+        nav ul li{
+            display: inline-block;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(237, 13, 13);
+            padding: 30px 30px;
+            display: block;
+        }
+
+        nav ul .subnav{
+            display: none ;
+            position: absolute;
+            top: 70px;
+        }
+
+        nav ul a:hover{
+            background-color: orange;
+            padding: 20px;
+        }
+
+        nav ul li:hover> .subnav{
+            display: block;
+        }
+
+        nav ul .subnav li{
+            display: list-item;
+            list-style-type: none;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="bg">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">Services</a>
+                    <ul class="subnav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home 1</a></li>
+                        <li><a href="">Home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">contact</a></li>
+                <li><a href="">details</a></li>
+
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

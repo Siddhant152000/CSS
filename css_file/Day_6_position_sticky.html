@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: orange;
+            height: 300vh;
+            width: 100%;
+            float: left;
+        }
+        .box-1{
+            background-color: green;
+            height: 100px;
+            width: 100%;
+            /* position: fixed;
+            float: left;
+            top: 0x; */
+        }
+        .box-2{
+            background-color: red;
+            height: 100px;
+            width: 100%;
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- position sticky-scroll for sometime then fixed to the window  used in header navbar   -->
+<div class="container">
+    <div class="box-1">
+        <h3 style="text-align: center;">Header</h3>
+    </div>
+    <div class="box-2">
+        <h3 style="text-align: center;">Navbar</h3>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .box {
+            height: 300px;
+            width: 400px;
+            background-color: crimson;
+            margin: 100px auto;
+            /* margin: y-axis x-axis; */
+            /* transition: height 3s width 5s tranform 3s; */
+
+        }
+
+        .box:hover {
+            /* height: 350px;
+            width: 450px; */
+
+            /* transfom property */
+            /* transform: rotate(deg); */
+            transform: rotate(50deg);
+            transform: rotate(120deg);
+            transform: rotate(10deg);
+            transform: rotate(-120deg);
+            transform: rotate(80deg);
+
+
+
+            /* 3D transform -process of rorating an object with respect to an angle in a three diamension plane */
+
+
+            /* transform: rotateX('angle'); */
+            transform: rotateX(120deg);
+            transform: rotateX(220deg);
+            transform: rotateY(200deg);
+            transform: rotateZ(240deg);
+
+            transform: rotate3d(120deg,100deg,140deg);
+
+
+            /* scale: zoom in zoom out ;
+            1>1-zoom out  1<1 -zoom in */
+
+            transform: scale(1.3);
+            transform: scale(1.4);
+            transform: scale(0.6);
+            transform: scale(0.2);
+
+            /* 3 D transform: ; */
+
+            transform:scale3d(1.3 ,0.3,1);
+
+            /* transition: move from its original position; */
+
+            transform: translate(220px);
+            transform: translate(120px);
+            transform: translate(220px ,220px);
+            transform: translateX(120PX);
+            transform: translateY(120px);
+
+            /* 3d transform */
+            transform: translate3d(120px ,180px ,100px);
+
+            /* skew-elements titted toword angle */
+            transform: skew(60deg);
+            transform: skewX(50deg);
+            transform: skewY(30deg);
+
+            transform: rotate(120deg) scale(1.3);
+            transform: scale(1.3);
+
+            /* transform: matrix(); */
+
+            /* x=[1 2 3
+               1 2 3
+               1 2 3] */
+
+
+               /* assignment: take one div  box 
+
+               inside div take one image (some height and width apply like div) the we hover an image only image 300px  effect */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- css 2D Transform -allow to move ,rorate ,scale ,skew  elments on mouse hover the elements to see a 2d transformation 2d rorate -->
+
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

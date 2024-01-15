@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-image: url(./images/img-1.jpeg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            background-color: black;
+            height: 80px;
+            width: 100%;
+        }
+
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: rgb(239, 24, 24);
+            padding: 25px 20px;
+            display: block;
+            display: flex;
+            font-size: 20px;
+            line-height: 20px;
+            font-variant: small-caps;
+            text-decoration: none;
+        }
+
+        nav ul .subnav {
+            display: none;
+            position: absolute;
+            top: 60px;
+            margin: 15px 0px;
+        }
+
+        nav a:hover {
+            background-color: green;
+            padding: 20px;
+        }
+
+        nav ul li:hover>.subnav {
+            display: inherit;
+
+        }
+
+        nav ul .subnav li {
+            width: 150px;
+            float: none;
+            display: list-item;
+            list-style-type: none;
+            background-color: black;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services </a>
+                    <ul class="subnav">
+                        <li><a href="#">Page1</a></li>
+                        <li><a href="#">Page2</a></li>
+                        <li><a href="#">Page3</a></li>
+                        <li><a href="#">Page4</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+        <!-- <i class="fa-solid fa-angle-down" style="margin: 10px 10px;"></i> -->
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

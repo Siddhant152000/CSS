@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: pink;
+
+            /* display: flex; */
+        }
+
+        .box_1,
+        .box_2,
+        .box_3,
+        .box_4,
+        .box_5,
+        .box_6,
+        .box_7,
+        .box_8 {
+            height: 250px;
+            width: 12.5%;
+            background-color: violet;
+
+            float: left;
+        }
+
+        .box_2 {
+            background-color: indianred;
+        }
+
+        .box_3 {
+            background-color: orange;
+
+        }
+
+        .box_4 {
+            background-color: teal;
+        }
+
+        .box_5 {
+            background-color: springgreen;
+        }
+
+        .box_6 {
+            background-color: navy;
+        }
+
+        .box_7 {
+            background-color: mediumseagreen;
+        }
+
+        .box_8 {
+            background-color: slateblue;
+        }
+
+
+
+
+
+        /* media query */
+        /* smaller devices */
+        @media screen And (max-width:767px) {
+
+            /* code */
+            /* .box_1,
+            .box_2,
+            .box_3,
+            .box_4,
+            .box_5,
+            .box_6,
+            .box_7,
+            .box_8 {
+                width: 100%;
+
+            } */
+            .container {
+                width: 50%;
+            }
+
+            .para{
+                font-size: 20px;
+                margin: 10px;
+            }
+
+            .card{
+                width: 100%;
+            }
+
+        }
+
+        /* for tablet devices */
+        /*  >767px  and <927px */
+
+        @media screen And (min-width:767px) {
+
+            /*  */
+            .box_1,
+            .box_2,
+            .box_3,
+            .box_4,
+            .box_5,
+            .box_6,
+            .box_7,
+            .box_8 {
+                width: 50%;
+            }
+
+        }
+
+
+        /* laptop devices
+        
+        >927px  And <1200px
+        */
+
+        @media screen And (min-width:927px) {
+
+            .box_1,
+            .box_2,
+            .box_3,
+            .box_4,
+            .box_5,
+            .box_6,
+            .box_7,
+            .box_8 {
+                width: 25%;
+            }
+
+
+        }
+
+
+
+        /* larger devices */
+
+        /* >1200px */
+        @media screen And (min-width:1200px) {
+
+            .box_1,
+            .box_2,
+            .box_3,
+            .box_4,
+            .box_5,
+            .box_6,
+            .box_7,
+            .box_8 {
+                width: 12.5%;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Media query eg -->
+
+    <!-- larger devices 8 box per row -->
+    <!-- Laptop devices 4 boxes per row -->
+    <!-- Tablet devices 2 boxes per row -->
+    <!-- Mobile devices 1 boxes per row -->
+
+
+
+    <div class="container">
+        <div class="box_1"></div>
+        <div class="box_2"></div>
+        <div class="box_3"></div>
+        <div class="box_4"></div>
+        <div class="box_5"></div>
+        <div class="box_6"></div>
+        <div class="box_7"></div>
+        <div class="box_8"></div>
+    </div>
+
+</body>
+
+</html>

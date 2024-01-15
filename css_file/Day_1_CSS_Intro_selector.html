@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1 simple selector */
+        p {
+            color: red;
+        }
+
+        .para {
+            color: green;
+        }
+
+        #para1 {
+            color: blue;
+        }
+
+
+        /* 2 universal selector */
+        * {
+            background-color: aqua;
+        }
+
+
+        /* 1 decendet selector -spacing  */
+
+        div p {
+            color: orange;
+        }
+
+        /* 2 child selector > */
+        div>p{
+            color: pink;
+        }
+
+        /* 3 general sibling slector ~ */
+        div ~p{
+            background-color: yellow;
+        }
+        /* 4 adj sibling selector + */
+        div+p{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS  is a language use to styling and formating in our web page. 
+
+    CSS -CASCADING STYLE SHEET 
+    types of css 
+    1 inline css -in between html opening tag using style attriutes <h1 style="color: white;"></h1>
+
+    2 internal css -in between head tag using style tag <head><style>h1{background-color: red;}</style></head>
+
+    3 external css - create a new .css file  and attarch file in html page <link rel="stylesheet" herf="home.css"/>
+     code sepration, easy code maintaining  
+
+     
+
+
+
+
+
+
+     selector ---help to fetch html for styling purpuse 
+
+
+
+     1 simple selector  - id  class tag name selector
+
+     id # must be unique name 
+
+     class . we can use multime same class name  
+
+     tag name - p ,h1 ,img ,a
+
+
+     2 universal selector -* apply styling whole html page 
+
+
+     3 combinator selector 
+            1 decendent selector-indicate bay spacing  select all html elements which are directly specified into spefific elements 
+
+
+            div p{
+                color:red;
+            }
+
+
+            2 child selector -indicate by > - select all html elements which are children of specific elements 
+
+            div > p ,h1{
+                color:red;
+            }
+
+            3 general sibling selector  -indicate bay ~ symbol  select all html elements which are sibling of specific elements 
+             
+            4 adjecent sibling selector - +symbol select all html elements which are immediate sibling of specific elements 
+
+       4 pseudo  classes selector  -indicate by :hover :link , :visited ,first-child ,last-child ,nth-child ,(even /odd /2),first-line ,last-line . 
+       
+
+       5 pseudo elements selector =::before ::after ::first-of-type ,::placeholder ,last-of-type .  -->
+
+
+
+    <div>
+        <!-- <p class="para">Lorem ipsum dolor sit amet.</p>
+        <p id="para1">Lorem ipsum dolor sit amet.</p> -->
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            background-color: aqua;
+            height: 400px;
+            width: 50%;
+            margin: 100px auto;
+            box-shadow: 2px 2px 3px 2px black;
+
+            /* linear-gradient */
+
+            background-image: linear-gradient(orange, white, green);
+            background-image: linear-gradient(orange, white, green);
+            background-image: linear-gradient(to left, orange, white, green);
+
+
+            /* radial-gradient */
+
+            background-image: radial-gradient(orange, white, green);
+            background-image: radial-gradient(orange 10%, white 10%, green);
+            background-image: radial-gradient(closest-side at 60%, orange, white, green);
+            background-image: radial-gradient(farthest-side at 20% 60%, orange, white, green);
+            background-image: radial-gradient(farthest-corner at 20% 40%, orange, white, green);
+
+
+
+
+        }
+
+        .pie-chart {
+            /* conic gradient -spread equally from center and defined by degree by default 0 deg */
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 100px auto;
+            border-radius: 50%;
+            background-image: conic-gradient(orange,white,green);
+            background-image: conic-gradient(orange 40%,white 10deg,green);
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+            background-image: repeating-conic-gradient(orange 0deg 30deg, rgb(248, 248, 243) 30deg 60deg, rgb(3, 121, 23) 60deg 90deg);
+
+            background-image: conic-gradient(violet ,indigo,blue,green,yellow,red,orange);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+    <div class="pie-chart"></div>
+</body>
+
+</html>

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* ---------------------------------------------------nav1--------------------------------------------------------- */
+        .nav1 {
+            background-color: rgb(238, 237, 237);
+            height: 40px;
+            width: 100%;
+            padding: 10px 0px;
+            display: flex;
+        }
+
+        .nav1 a {
+            text-decoration: none;
+            color: gray;
+            font-size: 13px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .fa-location-dot {
+            font-size: 13px;
+            color: rgb(7, 182, 252);
+            margin-left: 200px;
+
+        }
+
+        .sub1 {
+            position: absolute;
+            top: 30px;
+            left: -200px;
+            color: white;
+            background-color: black;
+            width: 200px;
+            height: 50px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub1 {
+            visibility: visible;
+            z-index: 1;
+            
+        }
+
+        .fa-envelope {
+            font-size: 13px;
+            color: rgb(7, 182, 252);
+        }
+
+        .nav1 p {
+            position: relative;
+            right: 150px;
+        }
+
+        .sub2 {
+            position: relative;
+            top: 20px;
+            left: -300px;
+            color: white;
+            background-color: black;
+            width: 170px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub2 {
+            visibility: visible;
+        }
+
+        .fa-facebook-f {
+            position: relative;
+            left: 200px;
+            font-size: 14px;
+        }
+
+        .sub3 {
+            position: relative;
+            top: 20px;
+            left: 150px;
+            color: white;
+            background-color: black;
+            width: 80px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub3 {
+            visibility: visible;
+        }
+
+        .fa-twitter {
+            position: relative;
+            left: 135px;
+            font-size: 14px;
+        }
+
+        .sub4 {
+            position: relative;
+            top: 20px;
+            left: 100px;
+            color: white;
+            background-color: black;
+            width: 70px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub4 {
+            visibility: visible;
+        }
+
+        .fa-google-plus-g {
+            position: relative;
+            left: 80px;
+            font-size: 14px;
+        }
+
+        .sub5 {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background-color: black;
+            width: 95px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub5 {
+            visibility: visible;
+        }
+
+        .fa-linkedin-in {
+            font-size: 14px;
+        }
+
+        .sub6 {
+            position: relative;
+            top: 20px;
+            left: -40px;
+            color: white;
+            background-color: black;
+            width: px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub6 {
+            visibility: visible;
+        }
+
+        .fa-pinterest {
+            position: relative;
+            right: 75px;
+            font-size: 14px;
+        }
+
+        .sub7 {
+            position: relative;
+            top: 20px;
+            left: -100px;
+            color: white;
+            background-color: black;
+            width: px;
+            height: 30px;
+            visibility: hidden;
+            padding: 5px 10px;
+        }
+
+        .nav1 a:hover+.sub7 {
+            visibility: visible;
+        }
+
+        /* ---------------------------------------------------nav2--------------------------------------------------------- */
+        /* .dento-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        } */
+
+        .nav2 {
+            background-color: white;
+            height: 100px;
+            width: 100%;
+            font-size: 17px;
+
+        }
+
+        img {
+            position: relative;
+            bottom: 85px;
+            left: 200px;
+        }
+
+        .nav2 ul li {
+            display: inline-block;
+        }
+
+        .nav2 ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav2 .sub8 {
+            display: flex;
+            width: 55%;
+            justify-content: space-around;
+            padding: 35px 10px;
+        }
+
+        .nav2 ul .subnav {
+            display: none;
+            position: absolute;
+        }
+
+        .nav2 a:hover {
+            color: rgb(7, 182, 252);
+        }
+
+        .nav2 ul li:hover>.subnav {
+            display: inherit;
+            z-index: 1;
+        }
+
+        .nav2 ul .subnav li {
+            float: none;
+            display: list-item;
+            list-style-type: none;
+            background-color: white;
+        }
+
+        .sub8 {
+            margin-left: 450px;
+        }
+
+        .nav2 .subnav li {
+            padding: 7px 10px;
+        }
+
+        .nav2 ul .subnav1 {
+            display: none;
+            position: absolute;
+        }
+
+        .nav2 ul li:hover>.subnav1 {
+            display: inherit;
+            z-index: 1;
+        }
+
+        .nav2 ul .subnav1 li {
+            float: none;
+            display: list-item;
+            list-style-type: none;
+            background-color: white;
+        }
+
+        .nav2 .subnav1 li {
+            padding: 7px 10px;
+        }
+
+        .nav2 input {
+            height: 40px;
+            width: 130px;
+            position: relative;
+            left: 50px;
+            bottom: 10px;
+            border: none;
+            background-color: rgb(7, 182, 252);
+            color: white;
+            padding: 0px 15px;
+        }
+
+        .nav2 input:hover {
+            transition: all .5s;
+            background-color: white;
+            color: rgb(7, 182, 252);
+            border: 3px solid rgb(7, 182, 252);
+        }
+ /* ---------------------------------------------------bg-img1--------------------------------------------------------- */
+
+
+ .bg-img1{
+            background-image: url(./img/img15.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 100%;
+        }
+
+        .bg-img1 h1{
+            font-size: 35px;
+            background-color: hsla(233, 81%, 10%, 0.8);
+            height: 200px;
+            width: 100%;
+            color: white;
+            padding: 80px 600px;
+        }
+        /* ---------------------------------------------------Table-data--------------------------------------------------------- */
+
+        .tbl-data {
+            background-color: white;
+            height: 1000px;
+            width: 100%;
+        }
+
+        .tbl-data h1 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 35px;
+            text-align: center;
+            position: relative;
+            top: 80px;
+        }
+
+        .tbl-data .border2 {
+            border: 2px solid rgb(7, 182, 252);
+            width: 74px;
+            position: relative;
+            top: 100px;
+            left: 720px;
+        }
+
+        .tbl-data table {
+            height: 500px;
+            width: 1200px;
+            position: relative;
+            top: 150px;
+            left: 150px;
+
+        }
+
+        .tbl-data table,
+        th,
+        td {
+            border: 2px solid black;
+            padding-left: 10px;
+            font-size: 18px;
+            border-spacing: 5px;
+            padding: 15px 10px;
+        }
+
+        .tbl-data th {
+            background-color: rgb(7, 182, 252);
+            border: 1px solid rgb(7, 182, 252);
+            color: white;
+        }
+
+        .tbl-data td {
+            background-color: #f4f4f4;
+            border: 1px solid #f4f4f4;
+            color: #4c4c4c;
+        }
+
+        .tbl-data table {
+            border: none;
+        }
+
+        .tbl-data input {
+            position: relative;
+            top: 180px;
+            left: 650px;
+            height: 40px;
+            width: 170px;
+            font-size: 15px;
+            color: white;
+            background-color: rgb(7, 182, 252);
+            border: none;
+            font-weight: 550;
+
+        }
+
+        .tbl-data i {
+            position: relative;
+            top: 180px;
+            left: 610px;
+            color: rgb(9, 9, 9);
+            color: rgb(255, 255, 255);
+        }
+
+        .tbl-data input:hover {
+            background-color: white;
+            border: 3px solid rgb(7, 182, 252);
+            transition: all .5sec;
+            color: rgb(7, 182, 252);
+        }
+
+        .tbl-data input:hover+i {
+            transition: all .5sec;
+            color: rgb(7, 182, 252);
+        }
+
+         /* ---------------------------------------------------details--------------------------------------------------------- */
+
+         .bg-img4{
+            background-image: url(./img/img3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 650px;
+            width: 100%;
+        }
+
+        .details .logo p{
+            font-size: 17px;
+            line-height: 30px;
+            color: rgb(255, 255, 255);
+            position: relative;
+            bottom: 480px;
+            left: 100px;
+        }
+
+        .details .logo img{
+           position: absolute;
+           top: 1450px;
+           left: 100px;
+        }
+
+        .details .location i{
+            font-size: 17px;
+        }
+        .details .location{
+            position: relative;
+            bottom: 450px;
+            right: 100px;
+            font-size: 17px;
+            color: white;
+        }
+        .details .phone{
+            position: relative;
+            bottom: 400px;
+            right: 420px;
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+        }
+
+        .details .phone i{
+            color: rgb(7, 182, 252);
+        }
+
+        .details .mail{
+            position: relative;
+            bottom: 350px;
+            right: 590px;
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+        }
+
+        .details .mail i{
+            font-size: 17px;
+        }
+
+        .border6{
+            border: 0px solid rgb(255, 255, 255);
+            width: 70%;
+            background-color: hsla(233, 81%, 10%, 0.8);
+            height: 650px;
+            width: 100%; 
+        }
+
+        .time h1{
+            position: relative;
+            bottom: 530px;
+            right: 400px;
+            color: white;
+            font-weight: 450;
+            font-size: 20px;
+        }
+
+        .details .time li{
+            list-style-type: none;
+            display: list-item;
+            align-items: center;
+            line-height: 45px;
+            position: relative;
+            bottom: 510px;
+            right: 400px;
+            color: white;
+            font-size: 17px;
+        }
+
+        .details .links {
+            display: flex;
+            font-size: 17px;
+        }
+
+        .details .links h1{
+            font-size: 20px;
+            position: relative;
+            bottom: 530px;
+            right: 300px;
+            color: white;
+            font-weight: 450;
+        }
+
+        .details .links a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .links .l1{
+            position: relative;
+            bottom: 490px;
+            right: 300px;
+            color: white;
+            line-height: 40px;
+            
+        }
+
+        .links .l2{
+            position: relative;
+            bottom: 490px;
+            right: 450px;
+            color: white;
+            line-height: 40px;
+            
+        }
+
+        .news h1{
+            position: relative;
+            bottom: 530px;
+            right: 200px;
+            color: white;
+            font-weight: 450;
+        }
+        .news p{
+            position: relative;
+            bottom: 530px;
+            right: 200px;
+            color: white;
+            font-weight: 450;
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        .news input{
+            position: relative;
+            bottom: 500px;
+            right: 200px;
+            color: white;
+            font-weight: 450;
+            font-size: 15px;
+            line-height: 30px;
+            width: 200px;
+            padding: 3px;
+            height: 40px;
+        }
+
+        .news .fa-paper-plane{
+            color: rgb(255, 254, 254);
+            font-weight: 450;
+            font-size: 15px;
+            background-color: rgb(7, 182, 252);
+            height: 40px;
+            width: 40px;
+            padding: 12px;
+            position: relative;
+            bottom: 500px;
+            right: 240px; 
+        }
+         .news .fa-paper-plane:hover{
+            background-color: black;
+            transition: all 1s;
+         }
+
+         .news .fa-facebook-f{
+            position: relative;
+            left: -200px;
+            bottom: 350px;
+            color: white;
+         }
+
+         .news .fa-google-plus-g{
+            position: relative;
+            left: -160px;
+            bottom: 350px;
+            color: white;
+         }
+
+         .news .fa-linkedin-in{
+            position: relative;
+            left: -140px;
+            bottom: 350px;
+            color: white;
+         }
+
+         .news .fa-twitter{
+            position: relative;
+            left: -180px;
+            bottom: 350px;
+            color: white;
+         }
+
+
+    </Style>
+</head>
+<body>
+    <section>
+        <div>
+            <nav class="nav1">
+                <a href="#"><i class="fa-solid fa-location-dot"></i> 28 Jackson Street, Chicago, 7788569 USA</a>
+                <p class="sub1">28 Jackson Street, Chicago,<br> &nbsp; &nbsp;&nbsp; &nbsp; 7788569 USA</p>
+                <a href="#">
+                    <p><i class="fa-solid fa-envelope"></i> info.dento@gmail.com</p>
+                </a>
+                <p class="sub2">info.dento@gmail.com</p>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <p class="sub3">facebook</p>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <p class="sub4">Twitter</p>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <p class="sub5">google plus</p>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <p class="sub6">linkedin-in</p>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <p class="sub7">pinterest</p>
+            </nav>
+        </div>
+        <div class="dento-nav">
+            <nav class="nav2">
+                <ul class="sub8">
+                    <li><a href="http://127.0.0.1:5500/Project/dento.html">HOME</a></li>
+                    <li><a href="">PAGES <i class="fa-solid fa-angle-down" style="margin: 0px 2px;"></i></a>
+                        <ul class="subnav">
+                            <li><a href="http://127.0.0.1:5500/Project/dento.html">HOME</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/about-dento.html">ABOUT US</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/services-dento.html">SERVICE</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/pricing.html">PRICING</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/blog-dento.html">BLOG</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/blog-dento.html">BLOG DETAILS</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/contact.html">CONTACT</a></li>
+                            <li><a href="">DROPDOWN</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/Project/about-dento.html">ABOUT </a></li>
+                    <li><a href="http://127.0.0.1:5500/Project/services-dento.html">SERVICE</a></li>
+                    <li><a href="http://127.0.0.1:5500/Project/pricing.html">PRICING</a></li>
+                    <li><a href="">BLOG <i class="fa-solid fa-angle-down" style="margin: 0px 2px;"></i></a>
+                        <ul class="subnav1">
+                            <li><a href="http://127.0.0.1:5500/Project/blog-dento.html">BLOG</a></li>
+                            <li><a href="http://127.0.0.1:5500/Project/blog-dento.html">BLOG DETAILS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/Project/contact.html">CONTACT</a></li>
+                    <input type="button" value="BOOKING NOW">
+                </ul>
+                <img src="./img/logo.png" alt="">
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-img1">
+            <h1>OUR PRICING</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="tbl-data">
+            <h1>Pricing</h1>
+            <div class="border2"></div>
+
+            <table>
+                <tr>
+                    <th>Service Names</th>
+                    <th>Stage</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Teeth Whitening Service at home</td>
+                    <td>1 times</td>
+                    <td>$115.00</td>
+                </tr>
+
+                <tr>
+                    <td>Teeth Whitening Service at Dental Clinic</td>
+                    <td>1 times</td>
+                    <td>$100.00</td>
+                </tr>
+
+                <tr>
+                    <td>Ceramic crowns and fillings Dental porcelain</td>
+                    <td>1 times</td>
+                    <td>$99.00</td>
+                </tr>
+
+                <tr>
+                    <td>Remove crowns, bridges Service</td>
+                    <td>1 tooth</td>
+                    <td>$50.00</td>
+                </tr>
+
+                <tr>
+                    <td>Covering the recession of the gums</td>
+                    <td>1 times</td>
+                    <td>$400.00</td>
+                </tr>
+
+                <tr>
+                    <td>Consultation, impressions and preparation of models</td>
+                    <td>1 times</td>
+                    <td>$35.00</td>
+                </tr>
+
+                <tr>
+                    <td>Removal of an old inlay, old crown</td>
+                    <td>1 times</td>
+                    <td>$99.00</td>
+                </tr>
+
+                <tr>
+                    <td>Overlay teeth whitening ( 2 arches)</td>
+                    <td>1 times</td>
+                    <td>$170.00</td>
+                </tr>
+
+                <tr>
+                    <td>Standard porcelain and zirconium crown on implant</td>
+                    <td>1 tooth</td>
+                    <td>$499.00</td>
+                </tr>
+
+                <tr>
+                    <td>Implantation of an implant (price depends on system used)</td>
+                    <td>1 tooth</td>
+                    <td>$600.00</td>
+                </tr>
+            </table>
+            <div class="input2">
+                <a href="#"><input type="button" value="Read More"><i class="fa-solid fa-angles-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-img4">
+            <div>
+                <div class="border6"></div>
+                <div class="details" style="display: flex;">
+                
+                    <div class="logo">
+                       
+                        <p>Etiam sutor risus, dapibus act elefend katen,<br> lacinia sitamet denim. Mauris sagittis kansa <br>
+                            interdum dignissim.</p>
+                        <img src="./img/logo.png" height="50px">
+                        <a class="location"><i class="fa-solid fa-location-dot"></i> &nbsp;28 Jackson Street, Chicago, 7788569 USA</a>
+                        <a class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+84. 2252. 2250. 122</a>
+                        <a class="mail"><i class="fa-solid fa-envelope"></i>info.dento@gmail.com</a>
+                    </div>
+    
+                  
+                    <div class="time">
+                        <h1>Opening Hours</h1>
+                        <li>Mon-Wed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.00-18.00</li>
+                        <li>Thu-Fri &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.00-17.00</li>
+                        <li>Sat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.00-17.00</li>
+                        <li>Sun &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.00-17.00</li>
+                        <li>Holiday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed</li>
+                    </div>
+                   <div class="links">
+                        <h1>Quick Links</h1>
+                        <div class="l1">
+                            <a href=""><a1>About</a1><br></a>
+                            <a href=""><a2>Contact</a2><br></a>
+                            <a href=""><a3>News</a3><br></a>
+                            <a href=""><a4>Careers</a4><br></a>
+                            <a href=""><a5>Services</a5><br></a>
+                        </div>
+    
+                        <div class="l2">
+                            <a href=""><a1>FAQs</a1><br></a>
+                            <a href=""><a2>Policy</a2><br></a>
+                            <a href=""><a3>Advisor</a3><br></a>
+                            <a href=""><a4>Dentist</a4><br></a>
+                            <a href=""><a5>Legals</a5><br></a>
+                        </div>
+                   </div>
+    
+                   <div class="news">
+                        <h1>Newsletter</h1>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <p>We will send out weekly newest <br>article and some great offers</p>
+                        <input type="text" value="" placeholder="Email Address">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        
+                   </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* unvisited link */
+        a:link {
+            color: red;
+        }
+
+        /* visited link */
+        a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: yellow;
+        }
+
+        /* note:a:hover must come after link  a:link & a:visited in css
+        a:active must come after a:hover  */
+
+        input:focus {
+            background-color: pink;
+        }
+
+        ul li:first-child{
+            color: orange;
+            font-weight: bold;
+        }
+        ul li:last-child{
+            color: purple;
+            font-weight: bold;
+        }
+
+        ul li:nth-child(odd){
+            background-color: aqua;
+        }
+        ul li:nth-child(even){
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- A pseudo class is to define a special state of an elements 
+
+    used to - 
+    style an elements when a mouse over it 
+    style visited an unvisited links differently 
+    style an elements when it gets focus  -->
+
+
+    <p><b><a href="#">This is a link</a></b></p>
+
+    <input type="text" name=" " id="" placeholder="Enter your name">
+    <br>
+    <ul>
+        <li>lorem</li>
+        <li>lorem</li>
+        <li>lorem</li>
+        <li>lorem</li>
+        <li>lorem</li>
+    </ul>
+
+</body>
+
+</html>
